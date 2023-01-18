@@ -1,28 +1,39 @@
+/*
+/// -------------------------------------------------------------------------------------------------------
+/// :: Patrocínio Odontologia - Developed by Agência Star | 13/01/2023 - 18:30.
+/// :: Collaborators: Mary Lindsen (@marynotjane_) and Hebert Dias (@hebertdev82).
+/// :: WARNING: This computer program is protected by copyright law and international treaties.
+/// :: Unauthorized duplication or distribution of this program, or any portion of it, may result
+/// :: in severe civil or criminal penalties, and will be prosecuted to the maximum extent possible
+/// :: under the law.
+/// ::
+/// :: v.1.0 - 13/01/2023 - Implementation.
+/// -------------------------------------------------------------------------------------------------------
+*/
+
+@import url(fonts.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto-Regular', sans-serif;
+    text-decoration: none;
 }
 
-body {
-    background-color: #f9f9f9;
+html {
+  scroll-behavior: smooth;
 }
 
-/*
-.head{
-    background-image: url(/img/AdobeStock_426720491.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-*/
+:root {
+    --Roxo: #59024B;
+    --Amarelo: #F29F05;
+    --Preto: #0D0D0D;
+    --Branco: #F9F9F9;
+}
 
-
-/*CABEÇÃLHO*/
 .cabecalho {
     align-items: center;
-
     display: flex;
     justify-content: space-between;
     padding: 2rem;
@@ -30,12 +41,10 @@ body {
     padding-right: 2rem;
 }
 
-
 .logo {
     width: 250px;
 }
 
-/*LISTA DO MENU*/
 .menu-lista {
     display: flex;
     margin-bottom: 100px;
@@ -49,12 +58,10 @@ body {
     margin-right: 0;
 }
 
-/*MENU LINK*/
 .menu-link {
-    color: purple;
+    color: var(--Roxo);
     margin-right: 1.2rem;
     text-decoration: none;
-
 }
 
 .menu-link.ativo {
@@ -67,13 +74,8 @@ body {
     transition: 0.5s;
 }
 
-
-/*BANNER*/
-
-.banner {}
-
 .bord {
-    border: 3px solid purple;
+    border: 3px solid var(--Roxo);
     width: 80px;
     margin-left: 2em;
 }
@@ -91,57 +93,49 @@ body {
     width: 400px;
 }
 
-
-
 .text-banner {
     display: block;
     float: right;
     margin-top: 1em;
     margin-right: 10.3em;
-    color: purple;
+    color: var(--Roxo);
     font-weight: bold;
 
 }
 
-/*SETA*/
 .arrow {
     width: 40px;
     transform: rotate(90deg);
     margin-left: 66em;
 }
 
-
-
-
-/*FORMULÁRIO PARA CONSULTA*/
 .form-consulta {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15em;
 }
 
-
 .link-banner {
     padding: 0.8rem;
     padding-top: 1em;
     margin-left: 3em;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
     background-color: white;
-    color: purple;
+    color: var(--Roxo);
 }
 
 .link-banner:hover {
-    background-color: purple;
+    background-color: var(--Roxo);
     color: white;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     transition: 0.4s;
 }
 
 .form-banner {
-    border: 2px solid purple;
+    border: 2px solid var(--Roxo);
     border-radius: 10px;
     margin-right: 2em;
     padding: 0.5em;
@@ -158,16 +152,16 @@ body {
 .form-link {
     text-decoration: none;
     color: white;
-    background-color: purple;
+    background-color: var(--Roxo);
     font-size: 15px;
     padding: 0.7em;
     border-radius: 10px;
 }
 
 .form-link:hover {
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     background-color: white;
-    color: purple;
+    color: var(--Roxo);
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -175,38 +169,19 @@ body {
 
 }
 
-
-
-/*SOBRE NÓS IMAGEM*/
 .sobrenos-content {
     display: flex;
     flex-direction: column;
 }
 
-.bord-sobrenos {
-    border: 3px solid purple;
-    width: 80px;
-    margin-bottom: 1em;
-}
-
-.sobrenos-img {
-    background: #fefefe;
-    width: 940px;
-    margin: 0 auto;
-}
 
 .img-sobrenos {
     float: left;
     width: 250px;
     margin: 0 3em 2em 3em;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
 
 }
-
-
-/*SOBRE NOS CONTENT*/
-
-
 
 .titulo-sobrenos {
     padding-bottom: 1em;
@@ -218,103 +193,23 @@ body {
     width: 75%;
 }
 
-
 .link-sobrenos {
     padding: 0.8rem;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    color: purple;
+    color: var(--Roxo);
     max-width: 230px;
 }
 
 .link-sobrenos:hover {
     color: white;
-    background-color: purple;
-    border: 1px solid purple;
+    background-color: var(--Roxo);
+    border: 1px solid var(--Roxo);
     transition: 0.5s;
 }
 
-/*DEPARTAMENTO*/
-/*
-.depart {
-    
-       display: flex;
-    flex-direction: column;
-    float: left;
-    margin-left: 100px;
-    margin-top: 100px;
-    justify-content: space-between;
-    display: flex;
-    gap: 10px;
- 
-}
-
-.bord-depart {
-    border: 2px solid purple;
-    width: 80px;
-}
-
-
-
-
-.text-depart {
-    max-width: 30rem;
-}
-
-.link-depart {
-    padding: 0.8rem;
-    border: 1px solid purple;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    color: purple;
-    width: 245px;
-    margin-top: 40px;
-}
-
-
-
-.icon-depart {
-    
-}
-
-.box1 {
-
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    background-color: purple;
-}
-
-.box2 {
-
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    background-color: purple;
-}
-
-.box3 {
-
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    background-color: purple;
-}
-
-.box4 {
-
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    background-color: purple;
-}
-*/
-
-
-/*DEPARTAMENTOS */
 .containers {
     display: flex;
     justify-content: space-around;
@@ -329,7 +224,7 @@ body {
 }
 
 .bord-containers {
-    border: 3px solid purple;
+    border: 3px solid var(--Roxo);
     margin-bottom: 1em;
     width: 15%;
 }
@@ -341,11 +236,11 @@ body {
 
 .input-dep {
     padding: 0.8rem;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    color: purple;
+    color: var(--Roxo);
     width: 245px;
     margin-top: 1em;
     background-color: #f9f9f9;
@@ -354,12 +249,10 @@ body {
 
 .input-dep:hover {
     color: white;
-    background-color: purple;
-    border: 1px solid purple;
+    background-color: var(--Roxo);
+    border: 1px solid var(--Roxo);
     transition: 0.5s;
 }
-
-/*DEPARTAMENTO CARDS */
 
 .cards-container {
     display: flex;
@@ -370,20 +263,16 @@ body {
 .card {
     width: 110px;
     height: 220px;
-    background-color: purple;
+    background-color: var(--Roxo);
     border: solid 1px red;
     border-radius: 15px;
     flex: 40%;
 }
 
-
 .link-card {
     text-decoration: none;
     color: white;
 }
-
-
-
 
 .img-card {
     padding: 0.5em;
@@ -409,14 +298,12 @@ body {
     color: white;
 }
 
-/*NOVIDADES*/
-
 .novidades {
     margin-top: 2em;
 }
 
 .bord-novidades {
-    border-top: 4px solid purple;
+    border-top: 4px solid var(--Roxo);
     width: 60px;
     margin: 0 auto;
     margin-bottom: 1em;
@@ -436,7 +323,6 @@ body {
     margin-left: 250px;
 }
 
-
 .text-novidade {
     max-width: 30rem;
     margin-bottom: 2em;
@@ -444,22 +330,21 @@ body {
 
 .link-novidade {
     padding: 0.8rem;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    color: purple;
+    color: var(--Roxo);
     width: 245px;
     background-color: #f9f9f9;
 }
 
 .link-novidade:hover {
-    background-color: purple;
+    background-color: var(--Roxo);
     color: white;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     transition: 0.5s;
 }
-
 
 .img-novidades {
     width: 300px;
@@ -470,14 +355,12 @@ body {
     margin-top: 1em;
 }
 
-/*DEPOIMENTOS*/
-
 .depoimento {
     margin-top: 35em;
 }
 
 .bord-depoimento {
-    border-top: 3px solid purple;
+    border-top: 3px solid var(--Roxo);
     width: 60px;
     margin-bottom: 1.5em;
 }
@@ -487,11 +370,9 @@ body {
 }
 
 .content-depoimento {
-
     margin-top: 8em;
     margin-left: 10em;
 }
-
 
 .text-depoimento {
     max-width: 30rem;
@@ -500,11 +381,11 @@ body {
 
 .link-depoimento {
     padding: 0.8rem;
-    border: 1px solid purple;
+    border: 1px solid var(--Roxo);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    color: purple;
+    color: var(--Roxo);
     width: 245px;
     background-color: #f9f9f9;
 }
@@ -512,146 +393,78 @@ body {
 
 
 
-
-
-/*IMAGENS DEPOIMENTO*/
-/*
-.img-dep1 {
-    width: 200px;
-    height: 200px;
-    float: right;
-    border-radius: 100%;
-    margin-right: 500px;
-    margin-top: -208px;
-
-}
-
-.img-dep2 {
-    width: 162px;
-    height: 150px;
-    float: right;
-    border-radius: 100%;
-    margin-bottom: 0px;
-    margin-top: -346px;
-    margin-right: 351px;
-}
-
-.img-dep3 {
-    width: 80px;
-    height: 80px;
-    float: right;
-    border-radius: 100%;
-    margin-top: -132px;
-    margin-right: 340px;
-}
-
-
-
-.img-dep4 {
-    width: 140px;
-    height: 140px;
-    float: right;
-    border-radius: 100%;
-    margin-right: 325px;
-    margin-top: -30px;
-}
-
-.img-dep5 {
-    width: 140px;
-    height: 140px;
-    float: right;
-    border-radius: 100%;
-    margin-bottom: 0px;
-    margin-top: -258px;
-    margin-right: -341px;
-
-}
-
-.img-dep6 {
-    width: 70px;
-    height: 70px;
-    float: right;
-    border-radius: 100%;
-    margin-right: -299px;
-    margin-top: -57px;
-}
-
-*/
-
-/*FOOTER*/
-
-
-.rodape {
-    margin-top: 10em;
-    padding-bottom: 1em;
+/* Sobre Nós */
+.sobreNos {
+    padding: 2em;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobreNosColumn {
+    padding: 2em;
+    flex: 1 1 auto;
+}
+
+.sobreNosColumn hr {
+    border: 3px solid var(--Roxo);
+    width: 80px;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    padding: 2em;
+    margin-top: 10em; /* tirar */
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(208, 200, 200, 0.252);
-    -webkit-box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px -2px 5px 0px rgba(144, 144, 144, 0.484);
-}
-
-/*IMG FOOTER*/
-.content-img {
-    margin-top: 2em;
-
-}
-
-.img-rodape {
-    width: 200px;
-}
-
-
-
-
-/*TEXT FOOTER*/
-.text-rodape {
-    max-width: 30rem;
-}
-
-.titulo-siganos,
-.titulo-contato {
+    -webkit-box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -2px 5px 0px rgba(0,0,0, 0.15);
     text-align: center;
 }
 
-.content-siganos,
-.content-contato {
-    margin-top: 1em;
-    margin-right: 2em;
-    max-width: 30rem;
+.footerColumn {
+    padding: 2em;
+    flex: 1 1 auto;
 }
 
-.text-siganos {
-    padding-bottom: 1em;
+.linkFooter i {
+    font-size: 1.4em;
+    margin-right: 0.666em;
+    color: var(--Roxo);
 }
 
-.text-siganos a {
-    text-decoration: none;
-    color: black;
+.linkFooter span {
+    color: var(--Preto);
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
-    margin-bottom: -10px;
-    margin-right: 10px;
+.linkFooter a {
+    margin-bottom: 0.45em;
 }
 
-.icon2 {
-    width: 30px;
-    height: 30px;
-    margin-bottom: -10px;
-    margin-right: 10px;
+.linkFooter a:hover {
+    transition: all 0.3s;
+    color: var(--Roxo);
 }
 
-
-
-
+.footerTitle {
+    text-align: center;
+    font-family: 'Roboto-Bold', sans-serif;
+    margin-bottom: 2em;
+    color: var(--Roxo);
+    text-transform: uppercase;
+}
 
 .fim {
     font-size: 0.9em;
-    background-color: purple;
+    background-color: var(--Roxo);
     padding: 1.2em;
     text-align: center;
     width: 100%;
@@ -661,4 +474,12 @@ body {
 .link-susi {
     text-decoration: none;
     color: white;
+}
+
+.img-rodape {
+    width: 200px;
+}
+
+.text-rodape {
+    max-width: 30rem;
 }

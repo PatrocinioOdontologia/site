@@ -1,0 +1,22 @@
+/*
+/// -------------------------------------------------------------------------------------------------------
+/// :: Patrocínio Odontologia - Developed by Agência Star | 13/01/2023 - 18:30.
+/// :: Collaborators: Mary Lindsen (@marynotjane_) and Hebert Dias (@hebertdev82).
+/// :: WARNING: This computer program is protected by copyright law and international treaties.
+/// :: Unauthorized duplication or distribution of this program, or any portion of it, may result
+/// :: in severe civil or criminal penalties, and will be prosecuted to the maximum extent possible
+/// :: under the law.
+/// ::
+/// :: v.1.0 - 13/01/2023 - Implementation.
+/// -------------------------------------------------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
