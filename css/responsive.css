@@ -12,6 +12,20 @@
 */
 
 @media (max-width: 768px) {
+    
+    .sobreNos {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .sobreNosColumn {
+        text-align: center;
+    }
+
+    .sobreNosColumn hr {
+        text-align: center;
+    }
+    
     footer {
         padding: 0;
         text-align: center;

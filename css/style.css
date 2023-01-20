@@ -393,10 +393,16 @@ html {
 
 
 
+
+
+
+
+
 /* Sobre Nós */
 .sobreNos {
     padding: 2em;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
