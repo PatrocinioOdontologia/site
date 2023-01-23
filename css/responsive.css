@@ -12,7 +12,20 @@
 */
 
 @media (max-width: 768px) {
-    
+
+    /* Root */
+    .hrSite {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .h2Site {
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    /* Sobre Nós */
     .sobreNos {
         padding: 1em;
         flex-direction: column;
@@ -22,10 +35,31 @@
         text-align: center;
     }
 
-    .sobreNosColumn hr {
+    /* Departamentos */
+    .containers {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .departamentos {
         text-align: center;
     }
-    
+
+    .card {
+        flex: 50%;
+    }
+
+    /* Novidades */
+    .novidades {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .content-novidade {
+        text-align: center;
+    }
+
+    /* Footer */
     footer {
         padding: 0;
         text-align: center;

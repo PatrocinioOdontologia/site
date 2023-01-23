@@ -32,6 +32,37 @@ html {
     --Branco: #F9F9F9;
 }
 
+.hrSite {
+    border: 3px solid var(--Roxo);
+    width: 80px;
+    margin-bottom: 1em;
+}
+
+.h2Site {
+    font-family: 'Roboto-Bold', sans-serif;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: var(--Roxo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cabecalho {
     align-items: center;
     display: flex;
@@ -169,191 +200,12 @@ html {
 
 }
 
-.sobrenos-content {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.img-sobrenos {
-    float: left;
-    width: 250px;
-    margin: 0 3em 2em 3em;
-    border: 1px solid var(--Roxo);
-
-}
-
-.titulo-sobrenos {
-    padding-bottom: 1em;
-    font-size: 1.8em;
-}
-
-.text-sobrenos {
-    margin-bottom: 2em;
-    width: 75%;
-}
-
-.link-sobrenos {
-    padding: 0.8rem;
-    border: 1px solid var(--Roxo);
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--Roxo);
-    max-width: 230px;
-}
-
-.link-sobrenos:hover {
-    color: white;
-    background-color: var(--Roxo);
-    border: 1px solid var(--Roxo);
-    transition: 0.5s;
-}
-
-.containers {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    margin-top: 6em;
-    padding: 5em;
-}
-
-.departamentos {
-    align-content: center;
-    display: grid;
-}
-
-.bord-containers {
-    border: 3px solid var(--Roxo);
-    margin-bottom: 1em;
-    width: 15%;
-}
-
 .text-depoi {
     max-width: 30rem;
     margin-bottom: 3em;
 }
 
-.input-dep {
-    padding: 0.8rem;
-    border: 1px solid var(--Roxo);
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--Roxo);
-    width: 245px;
-    margin-top: 1em;
-    background-color: #f9f9f9;
-    text-align: center;
-}
 
-.input-dep:hover {
-    color: white;
-    background-color: var(--Roxo);
-    border: 1px solid var(--Roxo);
-    transition: 0.5s;
-}
-
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.card {
-    width: 110px;
-    height: 220px;
-    background-color: var(--Roxo);
-    border: solid 1px red;
-    border-radius: 15px;
-    flex: 40%;
-}
-
-.link-card {
-    text-decoration: none;
-    color: white;
-}
-
-.img-card {
-    padding: 0.5em;
-    border: 1px solid white;
-    border-radius: 100%;
-    background-color: white;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-    width: 3em;
-    height: auto;
-}
-
-.titulo-card {
-    margin-left: 0.5em;
-    margin-top: 0.4em;
-}
-
-.text-card {
-    margin-left: 0.8em;
-    max-width: 88%;
-    margin-top: 1em;
-    font-size: 0.7em;
-    color: white;
-}
-
-.novidades {
-    margin-top: 2em;
-}
-
-.bord-novidades {
-    border-top: 4px solid var(--Roxo);
-    width: 60px;
-    margin: 0 auto;
-    margin-bottom: 1em;
-}
-
-.titulo-novidade {
-    text-align: center;
-}
-
-.titulo-h3 {
-    font-size: 25px;
-}
-
-.content-novidade {
-    float: left;
-    margin-top: 2em;
-    margin-left: 250px;
-}
-
-.text-novidade {
-    max-width: 30rem;
-    margin-bottom: 2em;
-}
-
-.link-novidade {
-    padding: 0.8rem;
-    border: 1px solid var(--Roxo);
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--Roxo);
-    width: 245px;
-    background-color: #f9f9f9;
-}
-
-.link-novidade:hover {
-    background-color: var(--Roxo);
-    color: white;
-    border: 1px solid var(--Roxo);
-    transition: 0.5s;
-}
-
-.img-novidades {
-    width: 300px;
-    height: 300px;
-    float: right;
-    border-radius: 100%;
-    margin-right: 10em;
-    margin-top: 1em;
-}
 
 .depoimento {
     margin-top: 35em;
@@ -398,6 +250,111 @@ html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Departamentos */
+.containers {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.departamentos {
+    padding: 2em;
+    flex: 1 1 auto;
+}
+
+.departamentos p {
+    margin-bottom: 3em;
+}
+
+.bord-containers {
+    border: 3px solid var(--Roxo);
+    margin-bottom: 1em;
+    width: 15%;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--Roxo);
+    border: solid 1px red;
+    border-radius: 15px;
+    flex: 35%;
+    padding: 1em;
+}
+
+.link-card {
+    text-decoration: none;
+    color: white;
+}
+
+.img-card {
+    padding: 0.5em;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 3em;
+    height: auto;
+}
+
+.titulo-card {
+    margin-left: 0.5em;
+    margin-top: 0.4em;
+}
+
+.text-card {
+    margin-left: 0.8em;
+    max-width: 88%;
+    margin-top: 1em;
+    font-size: 0.7em;
+    color: white;
+}
+
+.input-dep {
+    padding: 0.8rem;
+    border: 1px solid var(--Roxo);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--Roxo);
+    width: 245px;
+    margin-top: 1em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.input-dep:hover {
+    color: white;
+    background-color: var(--Roxo);
+    border: 1px solid var(--Roxo);
+    transition: 0.5s;
+}
+
 /* Sobre Nós */
 .sobreNos {
     padding: 2em;
@@ -418,10 +375,79 @@ html {
     margin-bottom: 1em;
 }
 
+.sobreNosColumn h2 {
+    font-family: 'Roboto-Bold', sans-serif;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: var(--Roxo);
+}
 
+.img-sobrenos {
+    float: left;
+    width: 250px;
+    margin: 0 3em 2em 3em;
+    border: 1px solid var(--Roxo);
+}
 
+.link-sobrenos {
+    padding: 0.8rem;
+    border: 1px solid var(--Roxo);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--Roxo);
+    max-width: 230px;
+}
 
+.link-sobrenos:hover {
+    color: white;
+    background-color: var(--Roxo);
+    border: 1px solid var(--Roxo);
+    transition: 0.5s;
+}
 
+/* Novidades */
+.novidades {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-novidade {
+    padding: 2em;
+    flex: 1 1 auto;
+}
+
+.text-novidade {
+    max-width: 30rem;
+    margin-bottom: 2em;
+}
+
+.link-novidade {
+    padding: 0.8rem;
+    border: 1px solid var(--Roxo);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--Roxo);
+    width: 245px;
+    background-color: #f9f9f9;
+}
+
+.link-novidade:hover {
+    background-color: var(--Roxo);
+    color: white;
+    border: 1px solid var(--Roxo);
+    transition: 0.5s;
+}
+
+.img-novidades {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
 
 /* Footer */
 footer {
