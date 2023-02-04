@@ -11,7 +11,55 @@
 /// -------------------------------------------------------------------------------------------------------
 */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 500px) {
+    /* Root */
+    .hrSite {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .h2Site {
+        text-align: center;
+    }
+
+    /* Sobre Nós */
+    .sobreNos {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .sobreNosColumn {
+        text-align: center;
+    }
+
+    /* Novidades */
+    .novidades {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    /* Departamentos */
+    .containers {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .departamentos {
+        text-align: center;
+    }
+
+    /* Novidades */
+    .content-novidade {
+        text-align: center;
+    }
+    
+    /* Footer */
+    .img-rodape {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
 
     /* Root */
     .hrSite {
@@ -46,7 +94,7 @@
     }
 
     .card {
-        flex: 50%;
+        flex: 20%;
     }
 
     /* Novidades */
@@ -66,7 +114,34 @@
     }
 
     .img-rodape {
-        width: 80%;
+        width: 50%;
         margin-bottom: 1em;
     }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    /* Novidades */
+    .img-novidades {
+        width: 70%;
+        height: auto;
+    }
+
+    .content-novidade {
+        flex: 1;
+    }
+
+    .content-novidade figure {
+        text-align: center;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 1em;
+        flex-wrap: nowrap;
+    }
+
+    .text-rodape {
+        max-width: 100%;
+    }
+
 }

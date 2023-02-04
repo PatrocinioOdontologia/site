@@ -207,40 +207,7 @@ html {
 
 
 
-.depoimento {
-    margin-top: 35em;
-}
 
-.bord-depoimento {
-    border-top: 3px solid var(--Roxo);
-    width: 60px;
-    margin-bottom: 1.5em;
-}
-
-.titulo-depoimento {
-    text-align: center;
-}
-
-.content-depoimento {
-    margin-top: 8em;
-    margin-left: 10em;
-}
-
-.text-depoimento {
-    max-width: 30rem;
-    margin-bottom: 2.5em;
-}
-
-.link-depoimento {
-    padding: 0.8rem;
-    border: 1px solid var(--Roxo);
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--Roxo);
-    width: 245px;
-    background-color: #f9f9f9;
-}
 
 
 
@@ -446,7 +413,75 @@ html {
 .img-novidades {
     width: 100%;
     height: auto;
-    border-radius: 100%;
+}
+
+/* Depoimentos */
+.depoimento {
+    margin-top: 1em;
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.depoimento h1 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 2em;
+    margin-top: 1em;
+    color: var(--Branco);
+}
+
+.depoimento h3 {
+    font-size: 1.5em;
+    color: var(--Branco);
+    margin-bottom: 1em;
+}
+
+.depoimento h4 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--Branco);
+    margin-bottom: 2em;
+}
+
+.content-depoimento {
+    margin-left: 3em;
+    margin-right: 7em;
+    margin-top: 10em;
+    width: 100%;
+    height: 100%;
+}
+
+.itensDepoimento {
+    flex-basis: 50%;
+}
+
+.itensDepoimento img {
+    border-radius: 100px;
+    width: 100%;
+    margin-top: 7em;
+    margin-left: -7em;
+    z-index: 9;
+    position: sticky;
+}
+
+.depoimento i {
+    position: relative;
+    color: var(--Branco);
+    z-index: 99;
+}
+
+.depoimento i:hover {
+    color: var(--Amarelo);
+    transition: ease-in-out 0.3s;
+}
+
+.shape {
+    clip-path: polygon(0 15%, 100% 28%, 100% 72%, 0 85%);
+    background-color: var(--Roxo);
+    height: 600px;
+    z-index: 9999;
+    display: flex;
 }
 
 /* Footer */
